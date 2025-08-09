@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1 class="todo-title">Todo List</h1>
+        </div>
+
+        <div class="input-section">
+            <input type="text" class="task-input" placeholder="Add a todo..." id="taskInput">
+            <input type="date" class="date-input" id="dateInput">
+            <button class="add-btn" id="addBtn">+</button>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <span class="filter-text">Filter</span>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button class="delete-all-btn" id="deleteAllBtn">Delete All</button>
+        </div>
+
+        <div class="table-header">
+            <div class="header-text">Task</div>
+            <div class="header-text">Due Date</div>
+            <div class="header-text">Status</div>
+            <div class="header-text">Actions</div>
+        </div>
+
+        <div class="todo-list" id="todoList">
+            <div class="no-tasks" id="noTasks">No task found</div>
+        </div>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
